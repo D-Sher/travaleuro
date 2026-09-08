@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 阿爾卑斯 × 義大利湖區 × 蔚藍海岸｜10/7–10/28</title>
+<meta name="description" content="2026 瑞士、義大利、法國蔚藍海岸慢旅行｜Dubai → Zürich → Lugano → Milano → Lago di Como → Genova → Ventimiglia → Nice → Dubai → Taipei">
+<style>
+:root{
+  --ink:#18252d; --muted:#6b777d; --paper:#f6f3ed; --paper2:#ece8df;
+  --white:#fff; --line:#ded8cc; --accent:#c5795b; --accent2:#58716e;
+  --navy:#263b45; --gold:#c3a56c; --shadow:0 18px 50px rgba(32,45,49,.10);
+  --radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;color:var(--ink);background:var(--paper);
+  font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC",
+  "Microsoft JhengHei",sans-serif;line-height:1.78;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.wrap{width:min(1180px,92%);margin:auto}
+.hero{
+  min-height:760px;color:#fff;display:flex;align-items:flex-end;
+  background:
+    linear-gradient(115deg,rgba(18,31,38,.82),rgba(26,53,60,.42)),
+    url("https://www.michelangelo.travel/fileadmin/_processed_/e/4/csm_04_LagoDiComo_Bellaggio_AdobeStock_355740181_eedafe2f8a.jpeg") center/cover;
+  position:relative;overflow:hidden;
+}
+.hero:after{
+  content:"";position:absolute;inset:auto -10% -120px -10%;height:220px;
+  background:var(--paper);transform:rotate(-3deg);
+}
+.hero-inner{position:relative;z-index:1;width:min(1180px,92%);margin:0 auto;padding:100px 0 120px}
+.eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;opacity:.82}
+.hero h1{font-size:clamp(44px,7vw,86px);line-height:1.02;max-width:900px;margin:18px 0 24px;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:#f0d8b0}
+.hero p{font-size:20px;max-width:820px;margin:0 0 30px;color:rgba(255,255,255,.92)}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.chip{
+  border:1px solid rgba(255,255,255,.28);background:rgba(0,0,0,.16);
+  padding:7px 14px;border-radius:999px;font-size:13px;backdrop-filter:blur(8px)
+}
+.nav{
+  position:sticky;top:0;z-index:50;background:rgba(246,243,237,.90);
+  backdrop-filter:blur(16px);border-bottom:1px solid rgba(222,216,204,.92)
+}
+.nav-inner{display:flex;align-items:center;gap:8px;overflow:auto;white-space:nowrap}
+.nav a{padding:15px 13px;font-size:13px;color:var(--muted)}
+.nav a:hover{color:var(--accent)}
+.section{padding:86px 0}
+.section.tinted{background:var(--paper2)}
+.kicker{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+.section h2{font-size:clamp(30px,4vw,48px);line-height:1.18;margin:8px 0 14px;letter-spacing:-.02em}
+.lead{color:var(--muted);font-size:17px;max-width:820px}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:34px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 7px 26px rgba(34,45,49,.045)}
+.stat b{display:block;font-size:29px;color:var(--navy);line-height:1.1;margin-bottom:7px}
+.stat span{font-size:13px;color:var(--muted)}
+.route-shell{
+  margin-top:34px;background:#fff;border:1px solid var(--line);border-radius:26px;
+  padding:28px;box-shadow:var(--shadow);overflow:hidden;
+}
+.route-line{display:flex;align-items:flex-start;min-width:980px;padding:32px 12px 22px}
+.rnode{width:13.5%;text-align:center;position:relative}
+.rnode:last-child{width:5%}
+.rdot{
+  width:15px;height:15px;border-radius:50%;margin:0 auto 12px;background:var(--accent);
+  box-shadow:0 0 0 7px #f0e2da
+}
+.rnode:not(:last-child):after{
+  content:"";position:absolute;top:7px;left:50%;width:100%;height:1px;background:#cfc6b8;z-index:0
+}
+.rdot,.rnode strong,.rnode small{position:relative;z-index:1}
+.rnode strong{display:block;font-size:14px}
+.rnode small{display:block;color:var(--muted);font-size:11px;margin-top:3px}
+.route-note{margin-top:12px;color:var(--muted);font-size:13px}
+.editorial{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:16px;margin-top:34px}
+.photo{
+  min-height:330px;position:relative;border-radius:22px;overflow:hidden;color:#fff;background:#2b3940;
+}
+.photo.tall{min-height:400px}
+.photo img{width:100%;height:100%;object-fit:cover;display:block;opacity:.85;position:absolute;inset:0}
+.photo:after{content:"";position:absolute;inset:30% 0 0;background:linear-gradient(transparent,rgba(10,19,24,.82))}
+.photo-copy{position:absolute;z-index:2;left:24px;right:24px;bottom:22px}
+.photo-copy .small{font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:.78}
+.photo-copy h3{margin:5px 0 4px;font-size:25px}
+.photo-copy p{margin:0;font-size:13px;opacity:.92}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin:30px 0 10px}
+.filter{
+  border:1px solid var(--line);background:#fff;padding:7px 13px;border-radius:999px;
+  font:inherit;font-size:12px;color:var(--muted);cursor:pointer
+}
+.filter.active,.filter:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.days{margin-top:10px}
+.day{
+  display:grid;grid-template-columns:92px 1fr 220px;gap:25px;padding:38px 0;
+  border-top:1px solid var(--line)
+}
+.day-no{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.12em}
+.day h3{margin:0;font-size:26px;line-height:1.3}
+.meta{font-size:13px;color:var(--muted);margin-top:4px}
+.badges{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}
+.badge{font-size:11px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 9px;color:var(--muted)}
+.day ul{margin:8px 0;padding-left:19px}
+.day li{margin:4px 0}
+aside.focus{
+  align-self:start;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;
+}
+.focus .label{font-size:11px;color:var(--accent);font-weight:800;letter-spacing:.14em}
+.focus h4{margin:5px 0 5px;font-size:15px}
+.focus p{margin:0;color:var(--muted);font-size:13px}
+base{font-size:13px}
+.stay-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+.stay{
+  background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;
+  min-height:170px;position:relative;overflow:hidden
+}
+.stay .num{font-size:11px;color:var(--accent);letter-spacing:.12em}
+.stay h3{margin:6px 0 2px;font-size:20px}
+.stay p{margin:0;color:var(--muted);font-size:13px}
+.stay .nights{position:absolute;right:16px;top:16px;font-size:12px;color:var(--gold);font-weight:800}
+.principles{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+.principle{border-top:2px solid var(--navy);padding-top:16px}
+.principle b{font-size:25px;color:var(--navy)}
+.principle h4{margin:7px 0 5px;font-size:16px}
+.principle p{margin:0;color:var(--muted);font-size:13px}
+.return{
+  border-radius:28px;padding:46px;color:#fff;
+  background:linear-gradient(135deg,#29434d,#60746f);
+  box-shadow:var(--shadow)
+}
+.return .kicker{color:#f0d5a6}
+.return h2{margin:7px 0 10px;color:#fff}
+.route-flight{display:flex;flex-wrap:wrap;gap:18px;align-items:center;font-size:27px}
+.route-flight span{opacity:.55}
+.smallnote{font-size:12px;opacity:.78;margin-top:12px}
+footer{padding:55px 0 75px;color:var(--muted);font-size:12px}
+footer .line{height:1px;background:var(--line);margin-bottom:18px}
+@media(max-width:1000px){
+  .stats{grid-template-columns:repeat(3,1fr)}
+  .editorial{grid-template-columns:1fr 1fr}
+  .photo.tall{grid-row:span 2}
+  .day{grid-template-columns:74px 1fr}
+  .day aside{grid-column:2}
+  .stay-grid{grid-template-columns:repeat(2,1fr)}
+  .principles{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:650px){
+  .hero{min-height:690px}
+  .hero-inner{padding-bottom:95px}
+  .hero p{font-size:17px}
+  .section{padding:64px 0}
+  .stats{grid-template-columns:1fr 1fr}
+  .editorial{grid-template-columns:1fr}
+  .photo,.photo.tall{min-height:280px}
+  .day{grid-template-columns:1fr;gap:8px}
+  .day aside{grid-column:auto}
+  .stay-grid,.principles{grid-template-columns:1fr}
+  .route-shell{overflow:auto}
+  .route-line{min-width:760px}
+}
+</style>
+</head>
+
+<body>
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div class="eyebrow">PRIVATE SLOW JOURNEY · ALPS TO MEDITERRANEAN</div>
+    <h1>2026 <em>山湖 × 城市 × 地中海</em><br>慢旅行</h1>
+    <p>
+      Dubai → Zürich → Lugano → Milano → Lago di Como → Genova → Ventimiglia → Nice
+      <br>
+      22 天，把旅程從阿爾卑斯的湖光山色，一路走到法國蔚藍海岸。
+    </p>
+    <div class="chips">
+      <span class="chip">2026.10.07 — 10.28</span>
+      <span class="chip">22 DAYS / 21 NIGHTS*</span>
+      <span class="chip">🚆 火車為主</span>
+      <span class="chip">🌊 Como Lake 3 DAYS</span>
+      <span class="chip">🐚 Nice 7 NIGHTS</span>
+    </div>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a href="#overview">旅程總覽</a>
+    <a href="#route">路線</a>
+    <a href="#highlights">精華地景</a>
+    <a href="#itinerary">每日行程</a>
+    <a href="#stay">住宿配置</a>
+    <a href="#style">慢遊原則</a>
+    <a href="#return">返程</a>
+  </div>
+</nav>
+
+<main>
+
+<section class="section" id="overview">
+  <div class="wrap">
+    <div class="kicker">TRIP OVERVIEW</div>
+    <h2>不是趕景點，而是一條越走越慢的路</h2>
+    <p class="lead">
+      這次延續之前南法慢遊的精神：城際移動盡量直達、少搬行李、城市核心優先、每天留白。
+      前半段以瑞士湖區與義大利北部為主，進入利古里亞海岸後逐漸放慢，最後把最多完整日留在 Nice。
+    </p>
+
+    <div class="stats">
+      <div class="stat"><b>22</b><span>旅程天數</span></div>
+      <div class="stat"><b>21</b><span>晚住宿／含一晚長途飛行節奏</span></div>
+      <div class="stat"><b>8</b><span>主要基地／轉場城市</span></div>
+      <div class="stat"><b>3</b><span>科莫湖完整日</span></div>
+      <div class="stat"><b>7</b><span>尼斯連住夜數</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tinted" id="route">
+  <div class="wrap">
+    <div class="kicker">THE ROUTE</div>
+    <h2>一路向西，從山湖走到地中海</h2>
+    <div class="route-shell">
+      <div style="overflow:auto">
+        <div class="route-line">
+          <div class="rnode"><div class="rdot"></div><strong>Dubai</strong><small>10/7 轉機</small></div>
+          <div class="rnode"><div class="rdot"></div><strong>Zürich</strong><small>10/8–10/9</small></div>
+          <div class="rnode"><div class="rdot"></div><strong>Lugano</strong><small>10/10–10/11</small></div>
+          <div class="rnode"><div class="rdot"></div><strong>Milano</strong><small>10/12–13</small></div>
+          <div class="rnode"><div class="rdot"></div><strong>Como Lake</strong><small>10/14–16</small></div>
+          <div class="rnode"><div class="rdot"></div><strong>Milano</strong><small>10/17</small></div>
+          <div class="rnode"><div class="rdot"></div><strong>Genova</strong><small>10/18–19</small></div>
+          <div class="rnode"><div class="rdot"></div><strong>Ventimiglia</strong><small>10/20</small></div>
+          <div class="rnode"><div class="rdot"></div><strong>Nice</strong><small>10/21–27</small></div>
+          <div class="rnode"><div class="rdot"></div><strong>Dubai</strong><small>10/28</small></div>
+        </div>
+      </div>
+      <div class="route-note">
+        核心邏輯：北 → 南 → 西；不回頭。城際優先火車，城市內以步行與大眾運輸減少體力消耗。
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="highlights">
+  <div class="wrap">
+    <div class="kicker">VISUAL JOURNEY</div>
+    <h2>五種風景，串成一趟旅行</h2>
+    <div class="editorial">
+      <article class="photo tall">
+        <img src="https://ocdn.eu/pulscms-transforms/1/9ITktkqTURBXy81ZmU5MDAzNzFhYzRkNmU3YTliMzA1YmMyYTEyYWRlZi5qcGVnkpUDIwDNEeXNChGTBc0EsM0CWA" alt="Zurich Lake">
+        <div class="photo-copy"><div class="small">01 · Switzerland</div><h3>Zürich</h3><p>城市、利馬特河與湖泊，先把旅行速度降下來。</p></div>
+      </article>
+      <article class="photo">
+        <img src="https://shop.luganoregion.com/cdn/shop/files/LR_pasqua-in-citta_lugano_digitalflow_2022_0005_800x1000px.jpg?v=1752479248&width=1024" alt="Lugano Lake">
+        <div class="photo-copy"><div class="small">02 · Ticino</div><h3>Lugano</h3><p>義式氣氛＋瑞士湖光，是從北到南的重要轉折。</p></div>
+      </article>
+      <article class="photo">
+        <img src="https://blog.mytoptour.es/hubfs/1-1.png" alt="Bellagio Lake Como">
+        <div class="photo-copy"><div class="small">03 · Lombardia</div><h3>Lago di Como</h3><p>三天不趕路：Como、Bellagio、Varenna。</p></div>
+      </article>
+      <article class="photo">
+        <img src="https://eu-west-1-g2i.graphassets.com/AI0DIWHkBQZyx6oBkSd3hz/UqafetOsQQCiMrZUok# Ventimiglia Coast" alt="Ventimiglia Coast">
+        <div class="photo-copy"><div class="small">04 · Liguria</div><h3>Ventimiglia</h3><p>義大利海岸線的最後一站，接上法國邊境。</p></div>
+      </article>
+      <article class="photo">
+        <img src="https://www.sunnydaysnice.com/rw_common/images/prom.jpg" alt="Nice Promenade">
+        <div class="photo-copy"><div class="small">05 · Côte d’Azur</div><h3>Nice</h3><p>最後七夜，讓地中海真正成為旅程的背景。</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section tinted" id="itinerary">
+  <div class="wrap">
+    <div class="kicker">DAY BY DAY</div>
+    <h2>22 天完整行程</h2>
+    <p class="lead">每天只抓一個主要主題；遠距離移動日不塞景點，湖區與尼斯則刻意留出「什麼都不做」的時間。</p>
+
+    <div class="controls">
+      <button class="filter active" data-filter="all">全部</button>
+      <button class="filter" data-filter="flight">✈️ 飛行</button>
+      <button class="filter" data-filter="swiss">🇨🇭 瑞士</button>
+      <button class="filter" data-filter="italy">🇮🇹 義大利</button>
+      <button class="filter" data-filter="france">🇫🇷 法國</button>
+      <button class="filter" data-filter="slow">☕ Slow Day</button>
+    </div>
+
+    <div class="days">
+
+      <article class="day" data-cat="flight">
+        <div class="day-no">DAY 01</div>
+        <div>
+          <h3>台北 → Dubai → Zürich</h3>
+          <div class="meta">10/07 · 國際飛行日</div>
+          <div class="badges"><span class="badge">✈️ 長途航班</span><span class="badge">Dubai 轉機</span><span class="badge">夜間移動</span></div>
+          <ul><li>由台北出發，經 Dubai 轉機前往 Zürich。</li><li>今天不排任何觀光行程，重點是順利轉場與休息。</li><li>以「飛行日」概念處理，不把轉機時間浪費在硬塞景點上。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">TODAY</div><h4>把第一天留給飛行</h4><p>真正的旅行從落地 Zürich 開始。</p></aside>
+      </article>
+
+      <article class="day" data-cat="swiss">
+        <div class="day-no">DAY 02</div>
+        <div>
+          <h3>Zürich｜老城 × 湖畔</h3>
+          <div class="meta">10/08 · 抵達日</div>
+          <div class="badges"><span class="badge">🇨🇭 Zürich</span><span class="badge">Limmat</span><span class="badge">Lake Zürich</span></div>
+          <ul><li>抵達 Zürich 後前往飯店、Check-in。</li><li>依體力安排 Bahnhofstrasse、老城、Limmat 河畔。</li><li>傍晚把時間留給 Zürichsee 湖畔與晚餐。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">THEME</div><h4>第一次遇見瑞士</h4><p>不追景點，先建立城市方向感與湖畔節奏。</p></aside>
+      </article>
+
+      <article class="day" data-cat="swiss slow">
+        <div class="day-no">DAY 03</div>
+        <div>
+          <h3>Zürich｜湖上慢遊</h3>
+          <div class="meta">10/09 · Slow Day</div>
+          <div class="badges"><span class="badge">☕ Slow Day</span><span class="badge">🛳 湖上</span></div>
+          <ul><li>上午依心情選擇老城咖啡館或湖畔。</li><li>可安排 Zürichsee 湖上短程遊船；秋季班次依當日官方時刻為準。</li><li>下午早點回飯店休息，為隔天南下作準備。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">THEME</div><h4>讓風景自己發生</h4><p>瑞士段的任務不是爬山，而是把身體調整到慢旅行模式。</p></aside>
+      </article>
+
+      <article class="day" data-cat="swiss">
+        <div class="day-no">DAY 04</div>
+        <div>
+          <h3>Zürich → Lugano</h3>
+          <div class="meta">10/10 · 南下 Ticino</div>
+          <div class="badges"><span class="badge">🚆 火車</span><span class="badge">Zürich HB → Lugano</span></div>
+          <ul><li>搭火車由 Zürich 前往 Lugano。</li><li>抵達後飯店 Check-in。</li><li>傍晚走湖畔、Piazza della Riforma 一帶。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">TRANSITION</div><h4>從德語區進入義式瑞士</h4><p>景色開始變暖，城市語言與飲食氛圍也逐漸轉向義大利。</p></aside>
+      </article>
+
+      <article class="day" data-cat="swiss slow">
+        <div class="day-no">DAY 05</div>
+        <div>
+          <h3>Lugano｜湖畔生活</h3>
+          <div class="meta">10/11 · Slow Day</div>
+          <div class="badges"><span class="badge">🇨🇭 Ticino</span><span class="badge">☕ 湖畔</span></div>
+          <ul><li>湖畔散步與早餐。</li><li>依體力選擇 Monte Brè／Monte San Salvatore，或直接留在湖邊。</li><li>晚餐以義式料理為主。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">RULE</div><h4>山不是必修課</h4><p>有精神再上山；沒有必要為了打卡犧牲慢遊節奏。</p></aside>
+      </article>
+
+      <article class="day" data-cat="italy">
+        <div class="day-no">DAY 06</div>
+        <div>
+          <h3>Lugano → Milano</h3>
+          <div class="meta">10/12 · 進入義大利</div>
+          <div class="badges"><span class="badge">🚆 火車</span><span class="badge">Milano Centrale</span></div>
+          <ul><li>搭火車進入 Milano。</li><li>下午安排 Duomo、Galleria Vittorio Emanuele II 一帶。</li><li>晚上自由用餐，不再跨區跑景點。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">CITY</div><h4>米蘭第一眼</h4><p>把核心地標集中在同一城市軸線，減少步行折返。</p></aside>
+      </article>
+
+      <article class="day" data-cat="italy">
+        <div class="day-no">DAY 07</div>
+        <div>
+          <h3>Milano｜城市美學</h3>
+          <div class="meta">10/13 · Milan</div>
+          <div class="badges"><span class="badge">🏛 Duomo</span><span class="badge">Brera</span><span class="badge">☕ Café</span></div>
+          <ul><li>上午依興趣參觀 Duomo／Terraces。</li><li>下午 Brera 一帶慢逛、咖啡。</li><li>把購物與晚餐留在市中心完成。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">NOTE</div><h4>米蘭只取精華</h4><p>不把城市變成博物館馬拉松，保留體力給科莫湖。</p></aside>
+      </article>
+
+      <article class="day" data-cat="italy">
+        <div class="day-no">DAY 08</div>
+        <div>
+          <h3>Milano → Como Lake</h3>
+          <div class="meta">10/14 · 進湖區</div>
+          <div class="badges"><span class="badge">🚆 火車</span><span class="badge">Como</span><span class="badge">🌊 湖畔</span></div>
+          <ul><li>由 Milano 前往 Como。</li><li>飯店 Check-in 後以 Como 老城與湖畔為主。</li><li>傍晚在 Piazza Cavour 一帶吃飯。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">LAKE 01</div><h4>正式進入湖區</h4><p>今天不追 Bellagio，把第一天留給 Como 自己。</p></aside>
+      </article>
+
+      <article class="day" data-cat="italy slow">
+        <div class="day-no">DAY 09</div>
+        <div>
+          <h3>Como Lake｜Bellagio</h3>
+          <div class="meta">10/15 · 湖區 Day 2</div>
+          <div class="badges"><span class="badge">🚤 船</span><span class="badge">Bellagio</span><span class="badge">☕ Slow</span></div>
+          <ul><li>搭湖上船班前往 Bellagio。</li><li>重點放在湖畔、巷弄、廣場與景觀。</li><li>下午找一間有湖景的咖啡或餐廳坐下。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">LAKE 02</div><h4>不要趕船</h4><p>Bellagio 是「坐下來看湖」的地方，不是一天跑三個小鎮的地方。</p></aside>
+      </article>
+
+      <article class="day" data-cat="italy slow">
+        <div class="day-no">DAY 10</div>
+        <div>
+          <h3>Como Lake｜Varenna</h3>
+          <div class="meta">10/16 · 湖區 Day 3</div>
+          <div class="badges"><span class="badge">🚤 船／🚆</span><span class="badge">Varenna</span><span class="badge">🌿</span></div>
+          <ul><li>前往 Varenna，安排湖畔與小鎮散步。</li><li>依體力選擇短距離景觀路線。</li><li>回住宿地後早點休息，準備隔天回 Milano。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">LAKE 03</div><h4>三天才是科莫湖</h4><p>把 Bellagio 與 Varenna 分開，旅程會舒服很多。</p></aside>
+      </article>
+
+      <article class="day" data-cat="italy slow">
+        <div class="day-no">DAY 11</div>
+        <div>
+          <h3>Como Lake → Milano</h3>
+          <div class="meta">10/17 · 轉場＋休息</div>
+          <div class="badges"><span class="badge">🚆 火車</span><span class="badge">Rest</span></div>
+          <ul><li>上午由湖區返回 Milano。</li><li>下午不排大型景點，處理洗衣、購物、整理行李。</li><li>早點用餐，讓隔天往 Liguria 的移動更輕鬆。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">BUFFER</div><h4>專門留一個緩衝日</h4><p>這就是慢旅行與一般觀光團最大的差別。</p></aside>
+      </article>
+
+      <article class="day" data-cat="italy">
+        <div class="day-no">DAY 12</div>
+        <div>
+          <h3>Milano → Genova</h3>
+          <div class="meta">10/18 · 進入 Liguria</div>
+          <div class="badges"><span class="badge">🚆 火車</span><span class="badge">Porto Antico</span></div>
+          <ul><li>搭火車前往 Genova。</li><li>抵達後入住飯店。</li><li>下午走 Porto Antico、港口與海邊。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">SEA CHANGE</div><h4>從湖水到海水</h4><p>旅行的視覺語言開始從山湖轉成海港。</p></aside>
+      </article>
+
+      <article class="day" data-cat="italy">
+        <div class="day-no">DAY 13</div>
+        <div>
+          <h3>Genova｜老城 × 港口</h3>
+          <div class="meta">10/19 · Genova</div>
+          <div class="badges"><span class="badge">🏛 Old Town</span><span class="badge">⚓ Porto</span></div>
+          <ul><li>Via Garibaldi 一帶。</li><li>熱那亞舊城街巷。</li><li>午后回到港口，安排海景咖啡或早晚餐。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">THEME</div><h4>用街巷理解熱那亞</h4><p>不追所有宮殿，挑一條歷史軸線慢慢看。</p></aside>
+      </article>
+
+      <article class="day" data-cat="italy">
+        <div class="day-no">DAY 14</div>
+        <div>
+          <h3>Genova → Ventimiglia</h3>
+          <div class="meta">10/20 · 沿海西行</div>
+          <div class="badges"><span class="badge">🚆 沿海鐵路</span><span class="badge">Ventimiglia</span></div>
+          <ul><li>沿 Ligurian Coast 向西。</li><li>抵達 Ventimiglia 後入住。</li><li>傍晚只安排海邊與碼頭一帶。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">BORDER TOWN</div><h4>義大利的最後一晚</h4><p>讓旅程自然靠近法國邊境，不需要再多塞一座城市。</p></aside>
+      </article>
+
+      <article class="day" data-cat="france">
+        <div class="day-no">DAY 15</div>
+        <div>
+          <h3>Ventimiglia → Nice</h3>
+          <div class="meta">10/21 · 進入 Côte d’Azur</div>
+          <div class="badges"><span class="badge">🚆 TER</span><span class="badge">Menton 沿線</span><span class="badge">Nice-Ville</span></div>
+          <ul><li>搭 TER 由 Ventimiglia 前往 Nice。</li><li>不安排 Monaco 停留，直接進 Nice。</li><li>入住後到 Place Masséna／海邊建立方向感。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">ARRIVAL</div><h4>最後一個基地</h4><p>從今天開始，行李不再一直搬：Nice 連住七晚。</p></aside>
+      </article>
+
+      <article class="day" data-cat="france">
+        <div class="day-no">DAY 16</div>
+        <div>
+          <h3>Nice｜Vieux Nice × 海濱</h3>
+          <div class="meta">10/22 · Classic Nice</div>
+          <div class="badges"><span class="badge">🌊 Promenade</span><span class="badge">Vieux Nice</span></div>
+          <ul><li>尼斯老城區。</li><li>Promenade des Anglais 英國人散步大道。</li><li>依體力用 L1／L2 輕軌縮短步行距離。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">NICE 01</div><h4>城市＋地中海</h4><p>把尼斯最經典的兩個面向放在同一天。</p></aside>
+      </article>
+
+      <article class="day" data-cat="france">
+        <div class="day-no">DAY 17</div>
+        <div>
+          <h3>Nice｜Villefranche-sur-Mer</h3>
+          <div class="meta">10/23 · 海岸小鎮日</div>
+          <div class="badges"><span class="badge">🚆 TER</span><span class="badge">Villefranche</span></div>
+          <ul><li>由 Nice 搭 TER 前往 Villefranche-sur-Mer。</li><li>以港灣、老城與海景為主。</li><li>下午回 Nice，不再延伸遠程。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">NICE 02</div><h4>短距離出走</h4><p>這種「出去半天、回基地休息」很適合你的慢遊節奏。</p></aside>
+      </article>
+
+      <article class="day" data-cat="france slow">
+        <div class="day-no">DAY 18</div>
+        <div>
+          <h3>Nice｜Free & Slow</h3>
+          <div class="meta">10/24 · 留白日</div>
+          <div class="badges"><span class="badge">☕ Slow Day</span><span class="badge">🚶 短距離</span></div>
+          <ul><li>睡晚一點，飯店附近早餐。</li><li>海邊、老城、咖啡館三選一即可。</li><li>完全不追遠郊。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">NICE 03</div><h4>把時間還給自己</h4><p>沒有景點也可以是完整的一天。</p></aside>
+      </article>
+
+      <article class="day" data-cat="france">
+        <div class="day-no">DAY 19</div>
+        <div>
+          <h3>Nice｜Cap-Ferrat 海岸線</h3>
+          <div class="meta">10/25 · 海岸景觀</div>
+          <div class="badges"><span class="badge">🌊 Coast</span><span class="badge">🚆／🚋</span></div>
+          <ul><li>依體力前往 Saint-Jean-Cap-Ferrat 一帶。</li><li>只取一段景觀，不安排完整健行圈。</li><li>下午回 Nice 午餐、休息。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">NICE 04</div><h4>看海，不要征服海岸</h4><p>景觀到手即可，不用為了完整步道增加步數。</p></aside>
+      </article>
+
+      <article class="day" data-cat="france slow">
+        <div class="day-no">DAY 20</div>
+        <div>
+          <h3>Nice｜第二個自由日</h3>
+          <div class="meta">10/26 · Slow Day</div>
+          <div class="badges"><span class="badge">☕ Slow</span><span class="badge">🌴 海邊</span></div>
+          <ul><li>上午海邊散步。</li><li>午餐後自由逛 Vieux Nice 或 Place Masséna。</li><li>預留採買伴手禮與整理行李時間。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">NICE 05</div><h4>完全不趕的一天</h4><p>這是旅程最像「住在 Nice」的一天。</p></aside>
+      </article>
+
+      <article class="day" data-cat="france slow">
+        <div class="day-no">DAY 21</div>
+        <div>
+          <h3>Nice｜Final Slow Day</h3>
+          <div class="meta">10/27 · 最後完整一天</div>
+          <div class="badges"><span class="badge">🌊 Mediterranean</span><span class="badge">☕ Café</span></div>
+          <ul><li>上午完全留白。</li><li>午間再訪最喜歡的地區。</li><li>傍晚以海邊晚餐作為整趟旅程收尾。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">NICE 06</div><h4>不急著告別</h4><p>最後一天不塞景點，讓旅程自然結束。</p></aside>
+      </article>
+
+      <article class="day" data-cat="flight">
+        <div class="day-no">DAY 22</div>
+        <div>
+          <h3>Nice → Dubai → Taipei</h3>
+          <div class="meta">10/28 · 返程日</div>
+          <div class="badges"><span class="badge">✈️ Nice → Dubai</span><span class="badge">Dubai → Taipei</span></div>
+          <ul><li>上午早餐、Check-out。</li><li>依實際航班時間前往 Nice Côte d’Azur Airport。</li><li>Nice → Dubai → Taipei。</li><li>實際抵台日期依航班銜接而定，可能為 10/29。</li></ul>
+        </div>
+        <aside class="focus"><div class="label">FINAL</div><h4>帶著地中海回家</h4><p>航班是返程骨架，實際時間以已訂機票與航空公司資訊為準。</p></aside>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="stay">
+  <div class="wrap">
+    <div class="kicker">ACCOMMODATION</div>
+    <h2>住宿配置｜少搬一次，就是多一點旅行</h2>
+    <p class="lead">依照前一趟南法慢遊的思路，基地盡量連住；其中 Como 湖區 3 晚、Nice 7 晚，讓最美的地方有足夠時間慢慢看。</p>
+
+    <div class="stay-grid">
+      <div class="stay"><div class="nights">2 NIGHTS</div><div class="num">BASE 01</div><h3>Zürich</h3><p>10/08–10/09<br>湖畔＋老城</p></div>
+      <div class="stay"><div class="nights">2 NIGHTS</div><div class="num">BASE 02</div><h3>Lugano</h3><p>10/10–10/11<br>Lake Lugano</p></div>
+      <div class="stay"><div class="nights">2 NIGHTS</div><div class="num">BASE 03</div><h3>Milano</h3><p>10/12–10/13<br>城市精華</p></div>
+      <div class="stay"><div class="nights">3 NIGHTS</div><div class="num">BASE 04</div><h3>Como Lake</h3><p>10/14–10/16<br>Como／Bellagio／Varenna</p></div>
+      <div class="stay"><div class="nights">1 NIGHT</div><div class="num">BASE 05</div><h3>Milano</h3><p>10/17<br>轉場休息</p></div>
+      <div class="stay"><div class="nights">2 NIGHTS</div><div class="num">BASE 06</div><h3>Genova</h3><p>10/18–10/19<br>港口＋老城</p></div>
+      <div class="stay"><div class="nights">1 NIGHT</div><div class="num">BASE 07</div><h3>Ventimiglia</h3><p>10/20<br>邊境海岸</p></div>
+      <div class="stay"><div class="nights">7 NIGHTS</div><div class="num">BASE 08</div><h3>Nice</h3><p>10/21–10/27<br>整趟旅程的最後基地</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tinted" id="style">
+  <div class="wrap">
+    <div class="kicker">TRAVEL PHILOSOPHY</div>
+    <h2>這一版特別為你設計的四個原則</h2>
+    <div class="principles">
+      <div class="principle"><b>01</b><h4>慢</h4><p>每天一個主題，不把景點堆滿。</p></div>
+      <div class="principle"><b>02</b><h4>少搬行李</h4><p>湖區三晚、尼斯七晚，讓住宿本身成為旅程的一部分。</p></div>
+      <div class="principle"><b>03</b><h4>火車優先</h4><p>城際移動以鐵路為主，避免不必要的轉車與公車。</p></div>
+      <div class="principle"><b>04</b><h4>步數留白</h4><p>遠郊只取精華；累了可以直接回基地休息。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="return">
+  <div class="wrap">
+    <div class="return">
+      <div class="kicker">FINAL DEPARTURE · 10/28</div>
+      <h2>再見，蔚藍海岸</h2>
+      <div class="route-flight"><b>Nice</b><span>→</span><b>Dubai</b><span>→</span><b>Taipei</b></div>
+      <div class="smallnote">
+        * 本頁將 10/7 的長途飛行視為旅程第 1 天；住宿夜數依抵達 Zürich 後的 20 晚計算。
+        航班、火車、渡船與城市交通的實際時刻，請於訂票後以官方資訊確認。
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="line"></div>
+    <b>2026 山湖 × 城市 × 地中海｜Private Slow Journey</b><br><br>
+    視覺照片：Zurich Tourism / Lugano Region / Lake Como travel imagery / Nice travel imagery 等公開網頁來源；
+    本頁為私人旅行規劃展示，不代表官方旅遊團或票券產品。照片版權仍歸原作者／來源網站所有。
+    <br><br>
+    行程為規劃版，正式交通時間、營業時間與票價以 2026 年出發前官方公告為準。
+  </div>
+</footer>
+
+<script>
+const buttons = document.querySelectorAll('.filter');
+const days = document.querySelectorAll('.day');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    days.forEach(day => {
+      const cats = day.dataset.cat.split(' ');
+      day.style.display = (filter === 'all' || cats.includes(filter)) ? 'grid' : 'none';
+    });
+  });
+});
+</script>
+</body>
+</html>
