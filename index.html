@@ -77,6 +77,12 @@ img{max-width:100%}
 .rnode strong{display:block;font-size:14px}
 .rnode small{display:block;color:var(--muted);font-size:11px;margin-top:3px}
 .route-note{margin-top:12px;color:var(--muted);font-size:13px}
+.route-map-container{
+  margin-top:24px;border-top:1px solid var(--line);padding-top:24px;text-align:center;
+}
+.route-map-img{
+  max-width:100%;height:auto;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,.06);
+}
 .editorial{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:16px;margin-top:34px}
 .photo{
   min-height:330px;position:relative;border-radius:22px;overflow:hidden;color:#fff;background:#2b3940;
@@ -237,6 +243,11 @@ footer .line{height:1px;background:var(--line);margin-bottom:18px}
       </div>
       <div class="route-note">
         核心邏輯：Lugano → Como 直走 R80 線，路線順暢無折返；湖區深度放慢，城市作為文化轉場與銜接。
+      </div>
+
+      <!-- 新增：鐵路路線地圖圖片區塊 -->
+      <div class="route-map-container">
+        <img src="input_file_0.png" alt="鐵路路線示意圖" class="route-map-img">
       </div>
     </div>
   </div>
