@@ -168,6 +168,25 @@ aside.focus{
 .stay p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
 .stay .nights{position:absolute;right:20px;top:20px;font-size:13px;color:var(--gold);font-weight:800;background:rgba(195,165,108,0.1);padding:4px 10px;border-radius:6px;}
 
+.stay{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:24px;
+  min-height:360px;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 8px 25px rgba(0,0,0,0.03);
+}
+
+.stay-photo{
+  width:calc(100% + 48px);
+  height:190px;
+  object-fit:cover;
+  display:block;
+  margin:-24px -24px 22px;
+}
+
 footer{padding:60px 0 80px;color:var(--muted);font-size:13px;text-align:center;background:var(--paper2);margin-top:60px;}
 footer .line{height:1px;background:var(--line);margin-bottom:25px}
 footer p{margin:5px 0;font-weight:500;}
@@ -417,6 +436,9 @@ footer p{margin:5px 0;font-weight:500;}
 
     <div class="stay-grid">
       <div class="stay">
+        <img class="stay-photo"
+     src="milano-hotel.jpg"
+     alt="米蘭飯店">
         <div class="num">BASE 01</div>
         <span class="nights">4 晚</span>
         <h3>Milano</h3>
@@ -424,6 +446,9 @@ footer p{margin:5px 0;font-weight:500;}
       </div>
 
       <div class="stay">
+        <img class="stay-photo"
+     src="savoia-hotel.jpg"
+     alt="熱拿亞飯店">
         <div class="num">BASE 02</div>
         <span class="nights">3 晚</span>
         <h3>Genova</h3>
@@ -431,6 +456,9 @@ footer p{margin:5px 0;font-weight:500;}
       </div>
 
       <div class="stay">
+          <img class="stay-photo"
+     src="nice-hotel.jpg"
+     alt="尼斯飯店">
         <div class="num">BASE 03</div>
         <span class="nights">5 晚</span>
         <h3>Nice</h3>
