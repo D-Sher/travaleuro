@@ -104,7 +104,7 @@ img{max-width:100%;height:auto;}
   width:100%;max-width:900px;height:auto;display:block;margin:0 auto;border-radius:18px;
 }
 
-/* Flight Grid & Train Table */
+/* Flight Grid & Train/Pass Tables */
 .flight-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:25px;margin-top:40px}
 .flight-card{
   background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px;
@@ -245,7 +245,7 @@ footer p{margin:5px 0;font-weight:500;}
   <div class="wrap nav-inner">
     <a href="#overview">總覽</a>
     <a href="#map">地圖</a>
-    <a href="#flights">航班與鐵路</a>
+    <a href="#flights">航班、鐵路與通票</a>
     <a href="#highlights">景點</a>
     <a href="#gourmet">美食</a>
     <a href="#hotels">飯店</a>
@@ -306,9 +306,9 @@ footer p{margin:5px 0;font-weight:500;}
 <!-- FLIGHTS & TRAINS -->
 <section class="section" id="flights">
   <div class="wrap">
-    <div class="kicker">TRANSPORT · 航班與鐵路時刻</div>
-    <h2>阿聯酋航空與精選義大利國鐵/機場快線配置</h2>
-    <p class="lead">精選航班時間與預先訂購的高規一等艙/區域快車，確保大行李移動與近郊漫遊皆舒適無憂。</p>
+    <div class="kicker">TRANSPORT & PASSES · 航班、鐵路與城市通票</div>
+    <h2>阿聯酋航空、精選義鐵與城市票券管理</h2>
+    <p class="lead">精選航班時間、預先訂購的高規一等艙/區域快車，以及旅程中使用的城市與區域通票資訊。</p>
 
     <div class="flight-grid">
       <div class="flight-card">
@@ -334,6 +334,41 @@ footer p{margin:5px 0;font-weight:500;}
           ● <strong>特色說明：</strong>10/27 於尼斯多停留一晚，10/28 午後輕鬆搭機。
         </div>
       </div>
+    </div>
+
+    <!-- CITY PASSES TABLE -->
+    <div class="train-table-wrapper" style="margin-top:30px;">
+      <h3>旅行通票與城市卡明細 (Passes & City Cards)</h3>
+      <table class="train-table">
+        <thead>
+          <tr>
+            <th>名稱</th>
+            <th>使用日期 / 效期</th>
+            <th>兌換 / 取得方式</th>
+            <th>適用範圍與備註</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>米蘭城市通票</strong></td>
+            <td>10/16 領票 / 10/17 使用 (24小時)</td>
+            <td>Milan Visitor Center - Tours 實體兌換</td>
+            <td>24小時連續使用，實體兌換地點位於米蘭中央車站附近。</td>
+          </tr>
+          <tr>
+            <td><strong>熱拿亞城市通票</strong></td>
+            <td>10/20 使用 (24小時)</td>
+            <td>自行取得票券</td>
+            <td>24小時連續使用，涵蓋熱那亞市區交通與重點景點優惠。</td>
+          </tr>
+          <tr>
+            <td><strong>PASS SUD AZUR EXPLORE</strong></td>
+            <td>依行程規劃彈性開通使用</td>
+            <td>自行取得票券</td>
+            <td>濱海阿爾卑斯省通票，適用範圍：芒通 ↔ 坎城附近區域鐵路與大眾運輸。</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <!-- TRAIN TABLE -->
@@ -618,20 +653,20 @@ footer p{margin:5px 0;font-weight:500;}
       <article class="day">
         <div class="day-no">10/16 (五) · DAY 02</div>
         <div>
-          <h3>抵達米蘭 (Milano) ➔ 飯店 Check-in ➔ 附近溫馨晚餐</h3>
+          <h3>抵達米蘭 (Milano) ➔ 領取通票 ➔ Check-in ➔ 附近溫馨晚餐</h3>
           <div class="meta">交通：MXP 2951 機場快線 (一等艙) 16:11–17:07 | 住宿：Hilton Milan (1/4)</div>
-          <div class="badges"><span class="badge">一等艙快線</span><span class="badge">MXP 2951</span><span class="badge">中央車站</span><span class="badge">迎賓晚餐</span></div>
+          <div class="badges"><span class="badge">一等艙快線</span><span class="badge">MXP 2951</span><span class="badge">米蘭通票領票</span><span class="badge">迎賓晚餐</span></div>
           <ul>
             <li>航班順利降落米蘭馬爾彭薩機場 (MXP)，辦理入境與提領行李。</li>
             <li><strong>16:11</strong> 搭乘 Malpensa Express 機場快線 (MXP 2951，一等艙)，於 <strong>17:07</strong> 直達米蘭中央車站 (Milano Centrale)。</li>
-            <li>前往飯店辦理 Check-in，稍作洗漱休息調整時差。</li>
-            <li>傍晚於中央車站周邊或飯店附近漫步，享用道地義式迎賓晚餐。</li>
+            <li>至車站附近的 Milan Visitor Center - Tours 實體領取<strong>「米蘭城市通票 (Milan Pass)」</strong>（預計 10/17 啟用）。</li>
+            <li>前往飯店辦理 Check-in，洗漱休息調整時差，傍晚於周邊享用道地義式迎賓晚餐。</li>
           </ul>
         </div>
         <aside class="focus">
           <div class="label">FOCUS</div>
-          <h4>抵達放鬆</h4>
-          <p>第一天不排繁重行程，搭乘一等艙快線直達車站，以適應時差與舒緩疲勞為主。</p>
+          <h4>抵達領票與放鬆</h4>
+          <p>第一天搭乘一等艙直達中央車站，領取米蘭通票並辦理入住，以舒緩時差與體力為主。</p>
         </aside>
       </article>
 
@@ -639,11 +674,11 @@ footer p{margin:5px 0;font-weight:500;}
       <article class="day">
         <div class="day-no">10/17 (六) · DAY 03</div>
         <div>
-          <h3>米蘭經典慢遊：大教堂＋艾曼紐二世拱廊</h3>
-          <div class="meta">交通：地鐵 / 電梯 | 住宿：Hilton Milan (2/4)</div>
-          <div class="badges"><span class="badge">米蘭大教堂</span><span class="badge">電梯登頂</span><span class="badge">拱廊咖啡</span><span class="badge">低步行</span></div>
+          <h3>米蘭經典慢遊：大教堂＋艾曼紐二世拱廊 (啟用米蘭城市通票)</h3>
+          <div class="meta">交通：米蘭城市通票 (24小時連續使用) / 電梯 | 住宿：Hilton Milan (2/4)</div>
+          <div class="badges"><span class="badge">米蘭城市通票</span><span class="badge">米蘭大教堂</span><span class="badge">電梯登頂</span><span class="badge">拱廊咖啡</span></div>
           <ul>
-            <li>上午搭地鐵前往 Duomo，以<strong>電梯登頂</strong>為主，不安排長距離徒步。</li>
+            <li>開通啟用<strong>「米蘭城市通票」</strong>，搭地鐵前往 Duomo，以<strong>電梯登頂</strong>為主，不安排長距離徒步。</li>
             <li>參觀米蘭大教堂與艾曼紐二世拱廊，景點集中，途中安排咖啡休息。</li>
             <li>午餐後回飯店或在市中心休息，午後不再硬排景點。</li>
             <li>晚餐選擇飯店周邊餐廳，讓身體保留體力給後續行程。</li>
@@ -651,8 +686,8 @@ footer p{margin:5px 0;font-weight:500;}
         </div>
         <aside class="focus">
           <div class="label">FOCUS</div>
-          <h4>少走多看</h4>
-          <p>把最重要的米蘭經典集中在同一區，登頂採電梯、午間回到慢節奏。</p>
+          <h4>通票便捷慢遊</h4>
+          <p>使用 24 小時米蘭城市通票探索經典，登頂採電梯，保持步調輕鬆自在。</p>
         </aside>
       </article>
 
@@ -702,19 +737,20 @@ footer p{margin:5px 0;font-weight:500;}
       <article class="day">
         <div class="day-no">10/20 (二) · DAY 06</div>
         <div>
-          <h3>米蘭 ➔ 熱那亞：一等艙快適移動，入住後港都散步</h3>
-          <div class="meta">交通：IC 659 城際列車 (一等艙) 09:10–10:40 | 住宿：Grand Hotel Savoia (1/3)</div>
-          <div class="badges"><span class="badge">IC 659 一等艙</span><span class="badge">舒適跨區</span><span class="badge">入住休息</span><span class="badge">舊港散步</span></div>
+          <h3>米蘭 ➔ 熱那亞：一等艙快適移動，啟用熱那亞城市通票</h3>
+          <div class="meta">交通：IC 659 城際列車 (一等艙) 09:10–10:40 / 熱那亞城市通票 (24小時) | 住宿：Grand Hotel Savoia (1/3)</div>
+          <div class="badges"><span class="badge">IC 659 一等艙</span><span class="badge">熱那亞城市通票</span><span class="badge">舒適跨區</span><span class="badge">舊港散步</span></div>
           <ul>
             <li>上午辦理退房，<strong>09:10</strong> 搭乘城際列車 IC 659 (一等艙) 南下熱那亞，於 <strong>10:40</strong> 順利抵達。</li>
-            <li>抵達後直接前往飯店寄放行李，Check-in 後先休息，再視體力前往舊港區短距離散步。</li>
+            <li>抵達後前往飯店寄放行李與辦理 Check-in，開通啟用自行取得的<strong>「熱那亞城市通票 (24小時)」</strong>。</li>
+            <li>稍作休息後，使用通票搭乘市區交通或參觀景點，視體力前往舊港區短距離散步。</li>
             <li>晚餐選飯店附近餐廳，避免晚上再安排跨區移動。</li>
           </ul>
         </div>
         <aside class="focus">
           <div class="label">FOCUS</div>
           <h4>換城市不換步調</h4>
-          <p>移動日選擇一等艙舒適移動，抵達後只做輕鬆活動，讓長輩充份適應新住宿。</p>
+          <p>一等艙快適移動加上熱那亞城市通票，讓初抵港都的交通與參觀輕鬆順暢。</p>
         </aside>
       </article>
 
@@ -723,7 +759,7 @@ footer p{margin:5px 0;font-weight:500;}
         <div class="day-no">10/21 (三) · DAY 07</div>
         <div>
           <h3>熱那亞歷史核心：總督宮、Via Garibaldi＋咖啡休息</h3>
-          <div class="meta">交通：地鐵 / 短程市區交通 | 住宿：Grand Hotel Savoia (2/3)</div>
+          <div class="meta">交通：地鐵 / 市區交通 (搭配城市通票) | 住宿：Grand Hotel Savoia (2/3)</div>
           <div class="badges"><span class="badge">Via Garibaldi</span><span class="badge">Palazzi dei Rolli</span><span class="badge">總督宮</span><span class="badge">短距離</span></div>
           <ul>
             <li>上午前往 Via Garibaldi，參觀羅利宮殿群與總督宮，重點式參觀、不追求全區走遍。</li>
@@ -784,10 +820,11 @@ footer p{margin:5px 0;font-weight:500;}
       <article class="day">
         <div class="day-no">10/24 (六) · DAY 10</div>
         <div>
-          <h3>尼斯舊城慢遊：薩萊亞集市＋海岸咖啡</h3>
-          <div class="meta">交通：步行 / 短程電車 | 住宿：AC Hotel Nice / 海景飯店 (2/5)</div>
-          <div class="badges"><span class="badge">Cours Saleya</span><span class="badge">舊城</span><span class="badge">海岸散步</span><span class="badge">低步行</span></div>
+          <h3>尼斯舊城慢遊：薩萊亞集市＋海岸咖啡 (南法通票適用區)</h3>
+          <div class="meta">交通：PASS SUD AZUR EXPLORE / 步行 / 電車 | 住宿：AC Hotel Nice / 海景飯店 (2/5)</div>
+          <div class="badges"><span class="badge">PASS SUD AZUR</span><span class="badge">Cours Saleya</span><span class="badge">舊城</span><span class="badge">海岸散步</span></div>
           <ul>
+            <li>可搭配<strong>「PASS SUD AZUR EXPLORE 通票」</strong>輕鬆搭乘蔚藍海岸區域鐵路與電車（範圍涵蓋芒通至坎城附近）。</li>
             <li>上午前往 Cours Saleya，集中看市場與舊城最有特色幾區。</li>
             <li>不安排城堡山登坡；改在平坦的海岸與廣場找咖啡座休息。</li>
             <li>午餐後回飯店午休，傍晚再到海邊看夕陽。</li>
@@ -805,10 +842,10 @@ footer p{margin:5px 0;font-weight:500;}
         <div class="day-no">10/25 (日) · DAY 11</div>
         <div>
           <h3>Villefranche-sur-Mer 半日海灣慢遊</h3>
-          <div class="meta">交通：TER 火車短程往返 | 住宿：AC Hotel Nice / 海景飯店 (3/5)</div>
-          <div class="badges"><span class="badge">火車直達</span><span class="badge">海灣風景</span><span class="badge">小鎮咖啡</span><span class="badge">半日遊</span></div>
+          <div class="meta">交通：PASS SUD AZUR EXPLORE (TER 火車短程往返) | 住宿：AC Hotel Nice / 海景飯店 (3/5)</div>
+          <div class="badges"><span class="badge">PASS SUD AZUR</span><span class="badge">火車直達</span><span class="badge">海灣風景</span><span class="badge">半日遊</span></div>
           <ul>
-            <li>搭 TER 前往 Villefranche-sur-Mer，避免公車與長距離車程。</li>
+            <li>使用 PASS SUD AZUR EXPLORE 通票搭乘 TER 火車前往 Villefranche-sur-Mer，避開公車與長途車程。</li>
             <li>只安排車站周邊、海灣與港口一帶，找一間海景餐廳坐著用餐。</li>
             <li>中午後即可回尼斯休息，下午完全自由。</li>
           </ul>
@@ -825,7 +862,7 @@ footer p{margin:5px 0;font-weight:500;}
         <div class="day-no">10/26 (一) · DAY 12</div>
         <div>
           <h3>費拉角 (Saint-Jean-Cap-Ferrat) 一日慢遊：羅斯柴爾德伯爵別墅</h3>
-          <div class="meta">交通：短程火車 / 公車 | 住宿：AC Hotel Nice / 海景飯店 (4/5)</div>
+          <div class="meta">交通：短程火車 (適用 PASS SUD AZUR) / 短程公車 | 住宿：AC Hotel Nice / 海景飯店 (4/5)</div>
           <div class="badges">
             <span class="badge">費拉角</span>
             <span class="badge">羅斯柴爾德伯爵別墅</span>
